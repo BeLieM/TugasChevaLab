@@ -7,6 +7,14 @@ const taskDeadlineInput = document.getElementById("taskDeadline");
 const addTaskBtn = document.getElementById("addTaskBtn");
 
 function loadData() {
+  // Kode untuk simpan ke localStorage
+  const data = localStorage.getItem("tasks");
+  if (data) {
+    notes = JSON.parse(data);
+  }
+}
+
+function loadData() {
   const storedTasks = localStorage.getItem("tasks");
   if (storedTasks) {
     tasks = JSON.parse(storedTasks);
@@ -15,7 +23,7 @@ function loadData() {
 }
 
 function saveData() {
-
+  localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
 function renderTasks() {
@@ -61,7 +69,7 @@ function addTask() {
     taskTitleInput.value = "";
     taskDescriptionInput.value = "";
     taskDeadlineInput.value = "";
-
+    saveData();
     renderTasks();
   } else {
     alert("Silakan isi semua field dengan benar!");
@@ -73,9 +81,11 @@ function deleteTask(index) {
   tasks.splice(index, 1);
 
   // Re-render tasks
+  saveData();
   renderTasks();
 }
 
 addTaskBtn.addEventListener("click", addTask);
 
+loadData();
 renderTasks();

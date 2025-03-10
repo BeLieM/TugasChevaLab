@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.container {
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.containerForm {
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.groupForm {
+  margin-bottom: 15px;
+}
+
+.groupForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: normal;
+  color: #333;
+}
+
+.groupForm input,
+.groupForm textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.groupForm textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.add-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-button:hover {
+  background-color: #3a80d2;
+}
+
+h2 {
+  color: #333;
+  margin: 30px 0 20px 0;
+  margin-left: 20px;
+}
+
+.gridTask {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.cardTask {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cardTask h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.cardTask p {
+  margin: 0 0 15px 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.footerTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerTask span {
+  color: #666;
+  font-size: 14px;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
