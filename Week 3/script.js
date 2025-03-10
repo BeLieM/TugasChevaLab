@@ -6,18 +6,6 @@ const taskDescriptionInput = document.getElementById("taskDescription");
 const taskDeadlineInput = document.getElementById("taskDeadline");
 const addTaskBtn = document.getElementById("addTaskBtn");
 
-function loadData() {
-  const storedTasks = localStorage.getItem("tasks");
-  if (storedTasks) {
-    tasks = JSON.parse(storedTasks);
-    renderTasks();
-  }
-}
-
-function saveData() {
-
-}
-
 function renderTasks() {
   taskList.innerHTML = "";
 
