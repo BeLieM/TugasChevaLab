@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Latihan Tailwind CSS</title>
+  </head>
+  <body class="bg-[#f7f4ed]">
+    <header class="border-b">
+      <div class="max-w-5xl mx-auto py-4 flex items-center justify-between">
+        <h1 class="font-bold text-3xl font-serif">Medium</h1>
+        <div class="flex space-x-3 items-center">
+          <nav class="space-x-3 text-xs">
+            <a href="" class="hidden md:inline-block font-serif"> Our Story</a>
+            <a href="/" class="hidden md:inline-block font-serif">
+              Membership</a
+            >
+            <a href="/" class="hidden md:inline-block font-serif"> Write</a>
+            <a href="/" class="hidden sm:inline-block font-serif"> Sign in</a>
+          </nav>
+          <button
+            class="bg-black text-white text-xs rounded-full py-2 px-4 font-bold cursor-pointer"
+          >
+            Get started
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex flex-col items-start max-w-6xl mx-25 py-30 px-6 lg:px-12">
+      <h1 class="text-8xl font-serif">Human</h1>
+      <h1 class="text-8xl font-serif">stories & ideas</h1>
+      <p class="text-xl mt-5 py-5">
+        A place to read, write, and deepen your understanding
+      </p>
+      <button
+        class="mt-6 px-6 py-3 bg-black text-white text-lg font-medium rounded-full hover:bg-gray-800 cursor-pointer"
+      >
+        Start reading
+      </button>
+    </div>
+
+    <div class="absolute top-24 right-10 hidden lg:block">
+      <img src="landingpage.webp" alt="Illustration" class="w-[450px]" />
+    </div>
+
+    <footer
+      class="absolute bottom-7 w-full text-center text-gray-500 text-sm hidden lg:block"
+    >
+      <hr class="border-t-2 h-3" />
+      <nav class="flex justify-center space-x-4">
+        <a href="#" class="hover:underline text-xs">Help</a>
+        <a href="#" class="hover:underline text-xs">Status</a>
+        <a href="#" class="hover:underline text-xs">About</a>
+        <a href="#" class="hover:underline text-xs">Careers</a>
+        <a href="#" class="hover:underline text-xs">Press</a>
+        <a href="#" class="hover:underline text-xs">Blog</a>
+        <a href="#" class="hover:underline text-xs">Privacy</a>
+        <a href="#" class="hover:underline text-xs">Terms</a>
+        <a href="#" class="hover:underline text-xs">Text to speech</a>
+        <a href="#" class="hover:underline text-xs">Teams</a>
+      </nav>
+    </footer>
+  </body>
+</html>
